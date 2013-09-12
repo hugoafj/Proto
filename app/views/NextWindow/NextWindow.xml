@@ -1,0 +1,42 @@
+<Alloy>
+	<View id="container" class="container">
+	    <View id="topToolBarContainer" class="topToolBarContainer">
+	        <View class="closeButton" onClick="closeWindow"></View>
+	    </View>
+        <View id="viewContainer" class="viewContainer">
+            <ScrollableView id="scrollableView" showPagingControl="true" backgroundColor="black">
+                <View id="view1" backgroundColor="#123"  top="0">
+                    <View top="0" height="30" backgroundColor="#246">
+                        <View class="backDay" onClick="backDay"></View>
+                        <View class="nextDay" onClick="nextDay"></View>
+                    </View>
+                    <ScrollView id="view11" backgroundColor="red" top="30" bottom="0" contentHeight="1500">
+                        <View backgroundImage="Default.png"></View>
+                    </ScrollView>
+                </View>
+                <View id="view2" backgroundColor="#246"  top="0">
+                    <View top="0" height="30" backgroundColor="#48b">
+                        <View class="backDay" onClick="backDay"></View>
+                        <View class="nextDay" onClick="nextDay"></View>
+                    </View>
+                    <ScrollView id="view21" backgroundColor="#256" top="30" bottom="0" contentHeight="1500">
+                        <View backgroundImage="Default.png"></View>
+                    </ScrollView>
+                </View>
+                <View id="view3" backgroundColor="#48b"  top="0">
+                    <View top="0" height="30" backgroundColor="#123">
+                        <View class="backDay" onClick="backDay"></View>
+                        <View class="nextDay" onClick="nextDay"></View>
+                    </View>
+                    <ScrollView id="view13" backgroundColor="#28b" top="30" bottom="0" contentHeight="1500">
+                        <View backgroundImage="Default.png"></View>
+                    </ScrollView>
+                </View>
+            </ScrollableView>
+        </View>
+        <View id="tabContainer" class="tabContainer">
+            <View id="tab1" class="tab1"></View>
+            <View id="tab2" class="tab2"  onClick="callNext"></View>
+        </View>
+	</View>
+</Alloy>

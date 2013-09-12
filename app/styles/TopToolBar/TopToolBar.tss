@@ -1,0 +1,21 @@
+".container": {
+	backgroundColor: "green"
+},
+".openMenu":{
+	height:40,
+	width:40,
+	backgroundColor:"red",
+	left:0
+},
+".button1":{
+	height:40,
+	width:40,
+	backgroundColor:"yellow",
+	right:50
+},
+".button2":{
+	height:40,
+	width:40,
+	right:0,
+	backgroundColor:"orange"
+}

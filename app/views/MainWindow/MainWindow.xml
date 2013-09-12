@@ -1,0 +1,23 @@
+<Alloy>
+    <Window id="win" class="win">
+        <View id="leftBar" class="leftBar">
+            <Require src="LeftBarView/LeftBarView"/>
+        </View>
+        <View id="mainContainer" class="mainContainer" isOpen="false">
+            <View id="topToolBarContainer" class="topToolBarContainer"></View>
+            <View id="viewContainer" class="viewContainer">
+                <ScrollView id="scrollView" backgroundColor="white" top="0" bottom="0" contentHeight="1500">
+                    <View backgroundImage="Default.png"></View>
+                </ScrollView>
+                <View id="topOptions" backgroundColor="blue" top="0" height="40"></View>
+                <View id="bottomOptions" backgroundColor="pink" bottom="0" height="40"></View>
+            </View>
+        </View>
+        <View id="floatingView" class="floatingView" >
+            <View bottom="50" backgroundColor="black" opacity="0.1" height="50" onClick="fadeOut"></View>
+        </View>
+        <View id="panelView" class="panelView">
+            <Require src="LeftBarView/LeftBarView"/>
+        </View>
+    </Window>
+</Alloy>

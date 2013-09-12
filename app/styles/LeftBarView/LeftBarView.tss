@@ -1,0 +1,21 @@
+".container": {
+	left:0,
+	right:0,
+	top:0,
+	bottom:0,
+	backgroundColor:"transparent"
+},
+".topToolBarContainer":{
+	top:0,
+	left:0,
+	right:0,
+	height:40,
+	backgroundColor:"#4b4b4b"
+},
+".closeButton":{
+	right:0,
+	width:40,
+	top:0,
+	bottom:0,
+	backgroundColor:"green"
+}

@@ -1,0 +1,46 @@
+".win": {
+	backgroundColor: "white"
+},
+".leftBar":{
+	top:0,
+	left:0,
+	bottom:0,
+	right:0,
+	backgroundColor:"#2f4e59"
+},
+".mainContainer":{
+	top:0,
+	left:0,
+	bottom:0,
+	width:Ti.Platform.displayCaps.platformWidth,
+	backgroundColor:"white",
+	layout:"vertical"
+},
+".topToolBarContainer":{
+	top:0,
+	left:0,
+	right:0,
+	height:40,
+	backgroundColor:"white"
+},
+".viewContainer":{
+	top:0,
+	left:0,
+	right:0,
+	bottom:0,
+	backgroundColor:"#4b4b4b"
+},
+".floatingView":{
+	top:0,
+	left:0,
+	right:0,
+	bottom:0,
+	backgroundImage:"images/location_01.png"
+},
+".panelView":{
+	height:Ti.Platform.displayCaps.platformHeight,
+	left:0,
+	right:0,
+	top:Ti.Platform.displayCaps.platformHeight,
+	backgroundColor:"white"
+}
