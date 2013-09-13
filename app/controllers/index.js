@@ -12,7 +12,21 @@
 // INSTANTIATION
 var APP = require("/core");
 
+// FUNCTIONS
+function joeScenario(){
+    APP.init(1);
+    APP.masterWindow.getView().open();
+}
 
-// CODE
-APP.init();
-APP.masterWindow.getView().open();
+function carlScenario(){
+    APP.init(2);
+    APP.masterWindow.getView().open();
+}
+
+function suzieScenario(){
+    APP.init(3);
+    APP.masterWindow.getView().open();
+}
+
+//CODE
+$.index.open();

@@ -25,8 +25,13 @@ var APP = {
      * NOTE: This should only be fired in index controller file and only once.
      */
 
-    init: function() {
-        APP.masterWindow = Alloy.createController('MainWindow/MainWindow');
+    init: function(_scenario) {
+        if(_scenario == 1)
+            APP.masterWindow = Alloy.createController('MainWindow/MainWindow');
+        else if(_scenario == 2)
+            APP.masterWindow = Alloy.createController('MainWindow/CarlMainWindow');
+        else if(_scenario == 3)
+            APP.masterWindow = Alloy.createController('MainWindow/SuzMainWindow');
     },
 
     /**

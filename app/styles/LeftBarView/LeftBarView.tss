@@ -10,12 +10,21 @@
 	left:0,
 	right:0,
 	height:40,
-	backgroundColor:"#4b4b4b"
+	backgroundColor:"white",
+	backgroundImage:"images/preferences.png"
 },
 ".closeButton":{
 	right:0,
-	width:40,
+	width:70,
 	top:0,
 	bottom:0,
-	backgroundColor:"green"
+	backgroundColor:"black",
+	opacity:0.1
+},
+".labelInfo":{
+	font:{
+		fontFamily:"helvetica newe",
+		fontSize:28
+	},
+	color:"#c8kaka"
 }

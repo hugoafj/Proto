@@ -2,7 +2,7 @@
 var APP = require("/core");
 var args = arguments[0] || {};
 
-APP.headerbar           = Alloy.createController('TopToolBar/TopToolBar',{});
+APP.headerbar           = Alloy.createController('TopToolBar/TopToolBar',{_scenario:2});
 APP.menubar.container   = $.panelView;
 //APP.menubar               = Alloy.createController('LeftMenuBar/LeftMenuBar',params);
 //APP.currentController     = Alloy.createController('EditPersonalInformation/EditPersonalInformation',params);
@@ -93,7 +93,7 @@ function byNear(){
 function byList(){
     $.scrollView.backgroundImage = "";
     $.topOptions.backgroundImage = "images/search_alphabetical.png";
-    $.locationView.backgroundImage = "images/location_alphabetical.png";
+    $.locationView.backgroundImage = "images/carllocation_list.png";
     $.bottomOptions.backgroundImage = "images/list.png";
     $.scrollView.add($.topOptions);
     $.scrollView.add($.locationView);
@@ -112,7 +112,7 @@ function byMap(){
 
 function openNext(){
      var slideIn = Titanium.UI.createAnimation({left: 0, duration: 200});
-    var tempWin = Alloy.createController("NextWindow/NextWindow");
+    var tempWin = Alloy.createController("NextWindow/carlNextWindow");
     APP.masterWindow.getView().add(tempWin.getView());
     tempWin.getView().animate(slideIn);
 }
@@ -160,6 +160,16 @@ function cooking(){
     $.viewContainer.height = Ti.UI.SIZE;
 }
 
+function clearView(){
+    $.locationView.backgroundImage = "";
+}
+
+function searchAction(){
+    $.locationView.backgroundImage = "images/carlsearch_burger.png";
+    $.locationView.height = 672;
+    $.openNext.visible = true;
+}
+
 //LISTENERS
 /*APP.container.addEventListener("click",function(){
     var slideIn = Titanium.UI.createAnimation({left: 0, duration: 200});
@@ -185,6 +195,7 @@ $.scrollView.addEventListener("scroll",function(_event){
 
 //CODE
 $.sortList.isOpen = false;
+whatsNew();
 
 // EXPORTS
 exports.openCloseMenu   = openCloseMenu;

@@ -11,7 +11,7 @@
 	right:0,
 	height:40,
 	backgroundColor:"white",
-	backgroundImage:"images/greyhound.png"
+	backgroundImage:"images/carllocation.png"
 },
 ".closeButton":{
 	left:0,

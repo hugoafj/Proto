@@ -3,5 +3,10 @@
         <View id="topToolBarContainer" class="topToolBarContainer">
             <View class="closeButton" onClick="slideDown"></View>
         </View>
+        <ScrollView id="viewContainer" contentHeight="809" top="40">
+            <View backgroundImage="Images/preferences01.png" height="809" top="0">
+                <Label top="300" class="labelInfo">Name</Label>
+            </View>
+        </ScrollView>
     </View>
 </Alloy>

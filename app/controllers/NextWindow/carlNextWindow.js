@@ -8,7 +8,6 @@ function closeWindow(){
     var slideOut = Titanium.UI.createAnimation({left: Ti.Platform.displayCaps.platformWidth, duration: 200});
     $.container.animate(slideOut);
     slideOut.addEventListener('complete', function(){
-        APP.masterWindow.byList();
         APP.container.remove($.container);
     });
 }
@@ -51,10 +50,10 @@ function hideBottomOptions(){
 //LISTENERS
 $.scrollView.addEventListener("scroll",function(_event){
     Ti.API.info(JSON.stringify(_event.y));
-    if(tempY+50 < _event.y && _event.y >= 0 && _event.y <= 73){
+    if(tempY+50 < _event.y && _event.y >= 0 && _event.y <= 862){
         hideBottomOptions();
         tempY = _event.y;
-    }else if(tempY-50 >_event.y && _event.y >= 0 && _event.y <= 73){
+    }else if(tempY-50 >_event.y && _event.y >= 0 && _event.y <= 862){
         showBottomOptions();
         tempY = _event.y;
     }

@@ -1,21 +1,25 @@
 ".container": {
-	backgroundColor: "green"
+	backgroundColor: "white",
+	backgroundImage:"images/cooking.png"
 },
 ".openMenu":{
 	height:40,
-	width:40,
-	backgroundColor:"red",
-	left:0
+	width:50,
+	backgroundColor:"black",
+	left:0,
+	opacity:"0.1"
 },
 ".button1":{
 	height:40,
-	width:40,
-	backgroundColor:"yellow",
-	right:50
+	width:100,
+	backgroundColor:"black",
+	left:58,
+	opacity:"0.1"
 },
 ".button2":{
 	height:40,
-	width:40,
-	right:0,
-	backgroundColor:"orange"
+	width:100,
+	left:158,
+	backgroundColor:"black",
+	opacity:"0.1"
 }

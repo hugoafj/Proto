@@ -30,10 +30,10 @@
                 </View>
             </View>
             <ScrollView id="viewContainer2" class="viewContainer">
-                <View id="locationView2" backgroundImage="Images/whatsnew.png" height="922" top="0"></View>
+                <View id="locationView2" backgroundImage="Images/whatsnew_noname.png" height="922" top="0"></View>
             </ScrollView>
         </View>
-        <View id="floatingView" class="floatingView" visible="false">
+        <View id="floatingView" class="floatingView" visible="true">
             <View bottom="50" backgroundColor="black" opacity="0.1" height="50" onClick="fadeOut"></View>
         </View>
         <View id="panelView" class="panelView">

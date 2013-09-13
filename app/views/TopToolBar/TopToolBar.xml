@@ -1,7 +1,7 @@
 <Alloy>
-    <View class="container">
+    <View id="container" class="container">
         <View id="openMenu" class="openMenu" onClick="openMenu"></View>
-        <View class="button1 " ></View>
-        <View class="button2" ></View>
+        <View class="button1" onClick="newTab"></View>
+        <View class="button2" onClick="cookingTab"></View>
     </View>
 </Alloy>

@@ -1,4 +1,9 @@
 <Alloy>
     <Window class="container">
+        <View>
+            <Button top="100" title="Joe Scenario" onClick="joeScenario"/> 
+            <Button top="200" title="Carl Scenario" onClick="carlScenario"/> 
+            <Button top="300" title="Suzie Scenario" onClick="suzieScenario"/>    
+        </View>
     </Window>
 </Alloy>

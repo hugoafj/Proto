@@ -1,8 +1,8 @@
 <Alloy>
-	<View id="container" class="container">
-	    <View id="topToolBarContainer" class="topToolBarContainer">
-	        <View class="closeButton" onClick="closeWindow"></View>
-	    </View>
+    <View id="container" class="container">
+        <View id="topToolBarContainer" class="topToolBarContainer">
+            <View class="closeButton" onClick="closeWindow"></View>
+        </View>
         <View id="viewContainer" class="viewContainer">
             <!-- MENU -->
             <ScrollableView id="scrollableView" showPagingControl="true" backgroundColor="white">
@@ -38,8 +38,7 @@
             <!-- INFO -->
             <ScrollView id="scrollView" backgroundColor="white" top="0" bottom="0" contentHeight="Ti.UI.SIZE">
                 <!--MAP-->
-                <View top="0" backgroundColor="white" backgroundImage="images/greyhounds_description.png" height="621">
-                    <View right="0" bottom="100" backgroundColor="black" opacity="0.1" width="100" height="30" onClick="openAddNew"></View>
+                <View top="0" backgroundColor="white" backgroundImage="images/carllocation_description.png" height="1410">
                 </View>
                 <!--MAP-->
             </ScrollView>
@@ -53,5 +52,5 @@
             <View id="tab1" class="tab1"></View>
             <View id="tab2" class="tab2"  onClick="callNext"></View>
         </View>-->
-	</View>
+    </View>
 </Alloy>

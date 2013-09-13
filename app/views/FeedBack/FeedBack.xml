@@ -1,0 +1,9 @@
+<Alloy>
+	<View id="container" class="container">
+	    <View id="like1" top="80" right="40" height="30" backgroundColor="black" opacity="0.1" width="30"  onClick="fnc_like1"></View>
+	    <View id="like2" top="123" right="40" height="30" backgroundColor="black" opacity="0.1" width="30"  onClick="fnc_like2"></View>
+	    <View id="like3" top="161" right="40" height="30" backgroundColor="black" opacity="0.1" width="30"  onClick="fnc_like3"></View>
+	    <TextArea id="textAreaFeed" top="245" width="280" height="72"></TextArea>
+	    <View id="sendButton" top="320" right="15" height="45" backgroundColor="black" opacity="0.1" width="90"  onClick="sendFeedBack"></View>
+	</View>
+</Alloy>

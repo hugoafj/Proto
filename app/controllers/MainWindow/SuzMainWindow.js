@@ -2,7 +2,7 @@
 var APP = require("/core");
 var args = arguments[0] || {};
 
-APP.headerbar           = Alloy.createController('TopToolBar/TopToolBar',{});
+APP.headerbar           = Alloy.createController('TopToolBar/TopToolBar',{_scenario:3});
 APP.menubar.container   = $.panelView;
 //APP.menubar               = Alloy.createController('LeftMenuBar/LeftMenuBar',params);
 //APP.currentController     = Alloy.createController('EditPersonalInformation/EditPersonalInformation',params);
@@ -185,6 +185,7 @@ $.scrollView.addEventListener("scroll",function(_event){
 
 //CODE
 $.sortList.isOpen = false;
+whatsNew();
 
 // EXPORTS
 exports.openCloseMenu   = openCloseMenu;
