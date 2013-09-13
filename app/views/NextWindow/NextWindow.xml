@@ -36,18 +36,18 @@
             </ScrollableView>
             <!-- MENU -->
             <!-- INFO -->
-            <ScrollView id="scrollView" backgroundColor="white" top="0" bottom="0" contentHeight="Ti.UI.SIZE">
+            <ScrollView id="scrollView" backgroundColor="white" top="0" bottom="0" contentHeight="560">
                 <!--MAP-->
-                <View top="0" backgroundColor="white" backgroundImage="images/greyhounds_description.png" height="621">
-                    <View right="0" bottom="100" backgroundColor="black" opacity="0.1" width="100" height="30" onClick="openAddNew"></View>
+                <View top="0" backgroundColor="white" backgroundImage="images/greyhounds_description.png" height="523">
+                    <View right="0" bottom="80" backgroundColor="transparent" opacity="0.1" width="100" height="30" onClick="openAddNew"></View>
                 </View>
                 <!--MAP-->
             </ScrollView>
             <!-- INFO -->
         </View>
         <View id="bottomOptions" backgroundColor="white" backgroundImage="images/info.png" bottom="0" height="45">
-            <View left="115" backgroundColor="black" opacity="0.1" width="41"  onClick="byMenu"></View>
-            <View left="161" backgroundColor="black" opacity="0.1" width="41"  onClick="byInfo"></View>
+            <View left="115" backgroundColor="transparent" opacity="0.1" width="41"  onClick="byMenu"></View>
+            <View left="161" backgroundColor="transparent" opacity="0.1" width="41"  onClick="byInfo"></View>
         </View>
         <!--<View id="tabContainer" class="tabContainer">
             <View id="tab1" class="tab1"></View>

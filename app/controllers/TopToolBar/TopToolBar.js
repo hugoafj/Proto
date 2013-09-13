@@ -18,8 +18,7 @@ function cookingTab(){
 }
 
 // CODE
-if((args._scenario && args._scenario == 2) || (args._scenario && args._scenario == 3))
-    $.container.backgroundImage = "images/new.png";
+$.container.backgroundImage = "images/new.png";
 
 // EXPORTS
 exports.newTab = newTab;

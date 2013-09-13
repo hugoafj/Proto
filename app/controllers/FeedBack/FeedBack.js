@@ -7,7 +7,7 @@ var tempY               = 0;
 //FUNCTIONS
 function sendFeedBack(){
     $.container.backgroundImage = "images/feedback_screen.png";
-    var backButton = Ti.UI.createView({opacity:0.1,backgroundColor:"black",left:0,top:0, width:40, height:40});
+    var backButton = Ti.UI.createView({opacity:0.1,backgroundColor:"transparent",left:0,top:0, width:40, height:40});
     backButton.addEventListener("click",function(){
         var slideOut = Titanium.UI.createAnimation({left: Ti.Platform.displayCaps.platformWidth, duration: 200});
         $.container.animate(slideOut);

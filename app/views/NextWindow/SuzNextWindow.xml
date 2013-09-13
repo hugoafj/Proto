@@ -15,7 +15,7 @@
                         <View id="conView" backgroundImage="images/suzmenu1.png">
                             <View id="slidingView" top="64" opacity="0" height="61" width="546" left="-226" isMore="false" backgroundImage="images/menu_more.png"></View>
                             <View id="btnSliding" top="64" backgroundColor="transparent" opacity="0.1" height="61" left="0" right="80" onClick="moveSlide"></View>
-                            <View id="likeBtn" top="276" backgroundColor="red" opacity="0.1" height="61" width="30" right="40" onClick="setLike1"></View>
+                            <View id="likeBtn" top="276" backgroundColor="transparent" opacity="0.1" height="61" width="30" right="40" onClick="setLike1"></View>
                         </View>
                     </ScrollView>
                 </View>

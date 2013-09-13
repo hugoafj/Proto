@@ -74,7 +74,7 @@ function selectMeal(){
 
 function openTags(){
      var thanksView = Ti.UI.createView({opacity:0,backgroundImage:"images/hashtag-list.png"});
-    var tempButton = Ti.UI.createView({opacity:0.1,backgroundColor:"black",top:270,left:101,height:40,width:135});
+    var tempButton = Ti.UI.createView({opacity:0.1,backgroundColor:"transparent",top:270,left:101,height:40,width:135});
     thanksView.add(tempButton);
     tempButton.addEventListener("click",function(){
         thanksView.backgroundImage = "images/hashtag-list2.png";
@@ -112,6 +112,10 @@ function openTags(){
 
 function changeOpt(){
     $.prefView.backgroundImage = "images/preferences03.png";
+}
+
+function logOut(){
+    APP.masterWindow.getView().close();
 }
 
 // CODE

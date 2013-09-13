@@ -49,7 +49,7 @@ function hideBottomOptions(){
 
 
 //LISTENERS
-$.scrollView.addEventListener("scroll",function(_event){
+/*$.scrollView.addEventListener("scroll",function(_event){
     Ti.API.info(JSON.stringify(_event.y));
     if(tempY+50 < _event.y && _event.y >= 0 && _event.y <= 73){
         hideBottomOptions();
@@ -59,7 +59,7 @@ $.scrollView.addEventListener("scroll",function(_event){
         tempY = _event.y;
     }
     
-});
+});*/
 
 
 //CODE

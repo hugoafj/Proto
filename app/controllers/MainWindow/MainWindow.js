@@ -119,7 +119,7 @@ function openNext(){
 
 function openPopUp(){
     var tempView        = Ti.UI.createView({backgroundImage:"Images/map_popup.png", height:"227", width:"307",opacity:0});
-    var tempButton      = Ti.UI.createView({backgroundColor:"black", height:93, top:38,opacity:0.1});
+    var tempButton      = Ti.UI.createView({backgroundColor:"transparent", height:93, top:38,opacity:0.1});
     tempButton.addEventListener("click",function(){
         var slideIn = Titanium.UI.createAnimation({left: 0, duration: 200});
         var tempWin = Alloy.createController("NextWindow/NextWindow");
@@ -160,6 +160,8 @@ function cooking(){
     $.viewContainer.height = Ti.UI.SIZE;
 }
 
+function changeOpt(){}
+
 //LISTENERS
 /*APP.container.addEventListener("click",function(){
     var slideIn = Titanium.UI.createAnimation({left: 0, duration: 200});
@@ -185,9 +187,11 @@ $.scrollView.addEventListener("scroll",function(_event){
 
 //CODE
 $.sortList.isOpen = false;
+whatsNew();
 
 // EXPORTS
 exports.openCloseMenu   = openCloseMenu;
 exports.whatsNew        = whatsNew;
 exports.cooking         = cooking;
 exports.byList          = byList;
+exports.changeOpt       = changeOpt;

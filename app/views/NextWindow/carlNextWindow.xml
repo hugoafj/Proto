@@ -11,26 +11,12 @@
                         <View class="backDay" onClick="backDay"></View>
                         <View class="nextDay" onClick="nextDay"></View>
                     </View>
-                    <ScrollView id="view11" backgroundColor="red" top="41" bottom="0" contentHeight="1500">
-                        <View backgroundImage="Default.png"></View>
-                    </ScrollView>
-                </View>
-                <View id="view2" backgroundColor="white"  top="0">
-                    <View top="0" height="42" backgroundColor="white" backgroundImage="images/tuesday.png">>
-                        <View class="backDay" onClick="backDay"></View>
-                        <View class="nextDay" onClick="nextDay"></View>
-                    </View>
-                    <ScrollView id="view21" backgroundColor="#256" top="41" bottom="0" contentHeight="1500">
-                        <View backgroundImage="Default.png"></View>
-                    </ScrollView>
-                </View>
-                <View id="view3" backgroundColor="white"  top="0">
-                    <View top="0" height="42" backgroundColor="white" backgroundImage="images/wednesday.png">>
-                        <View class="backDay" onClick="backDay"></View>
-                        <View class="nextDay" onClick="nextDay"></View>
-                    </View>
-                    <ScrollView id="view13" backgroundColor="#28b" top="41" bottom="0" contentHeight="1500">
-                        <View backgroundImage="Default.png"></View>
+                    <ScrollView id="view11" backgroundColor="white" top="41" bottom="0" contentHeight="1653">
+                        <View id="conView" backgroundImage="images/carlmenu.png">
+                            <View id="slidingView" top="64" opacity="0" height="61" width="546" left="-226" isMore="false" backgroundColor="transparent"></View>
+                            <View id="btnSliding" top="64" backgroundColor="transparent" opacity="0.1" height="61" left="0" right="80" ></View>
+                            <View id="likeBtn" top="276" backgroundColor="transparent" opacity="0.1" height="61" width="30" right="40" ></View>
+                        </View>
                     </ScrollView>
                 </View>
             </ScrollableView>
@@ -45,8 +31,8 @@
             <!-- INFO -->
         </View>
         <View id="bottomOptions" backgroundColor="white" backgroundImage="images/info.png" bottom="0" height="45">
-            <View left="115" backgroundColor="black" opacity="0.1" width="41"  onClick="byMenu"></View>
-            <View left="161" backgroundColor="black" opacity="0.1" width="41"  onClick="byInfo"></View>
+            <View left="115" backgroundColor="transparent" opacity="0.1" width="41"  onClick="byMenu"></View>
+            <View left="161" backgroundColor="transparent" opacity="0.1" width="41"  onClick="byInfo"></View>
         </View>
         <!--<View id="tabContainer" class="tabContainer">
             <View id="tab1" class="tab1"></View>

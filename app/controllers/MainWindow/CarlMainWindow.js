@@ -119,7 +119,7 @@ function openNext(){
 
 function openPopUp(){
     var tempView        = Ti.UI.createView({backgroundImage:"Images/map_popup.png", height:"227", width:"307",opacity:0});
-    var tempButton      = Ti.UI.createView({backgroundColor:"black", height:93, top:38,opacity:0.1});
+    var tempButton      = Ti.UI.createView({backgroundColor:"transparent", height:93, top:38,opacity:0.1});
     tempButton.addEventListener("click",function(){
         var slideIn = Titanium.UI.createAnimation({left: 0, duration: 200});
         var tempWin = Alloy.createController("NextWindow/NextWindow");
@@ -165,10 +165,16 @@ function clearView(){
 }
 
 function searchAction(){
-    $.locationView.backgroundImage = "images/carlsearch_burger.png";
+    //$.locationView.backgroundImage = "images/carlsearch_burger.png";
     $.locationView.height = 672;
     $.openNext.visible = true;
+    $.txtSearch.blur();
+    setTimeout(function(){
+        $.locationView.backgroundImage = "images/carlsearch_burger.png";
+    },200);
 }
+
+function changeOpt(){}
 
 //LISTENERS
 /*APP.container.addEventListener("click",function(){
@@ -202,3 +208,4 @@ exports.openCloseMenu   = openCloseMenu;
 exports.whatsNew        = whatsNew;
 exports.cooking         = cooking;
 exports.byList          = byList;
+exports.changeOpt       = changeOpt;

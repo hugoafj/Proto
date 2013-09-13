@@ -30,10 +30,13 @@ function nextDay(){
 }
 
 function byInfo(){
+    $.bottomOptions.backgroundImage = "images/info.png";
+    $.scrollView.visible = true;
 }
 
 function byMenu(){
-    
+    $.bottomOptions.backgroundImage = "images/menu.png";
+    $.scrollView.visible = false;
 }
 
 function showBottomOptions(){
@@ -46,8 +49,28 @@ function hideBottomOptions(){
     $.bottomOptions.animate(slideDown);
 }
 
+function moveSlide(){
+    if($.slidingView.isMore == false){
+        $.slidingView.opacity = 1;
+        $.slidingView.animate({left:0, duration:200});
+        $.btnSliding.right = 0;
+    }else{
+        $.slidingView.animate({left:-226, duration:200});
+        $.btnSliding.right = 80;
+        setTimeout(function(){
+            $.slidingView.opacity = 0;
+        },180);
+        
+    }
+    $.slidingView.isMore = !$.slidingView.isMore;
+}
+
+function setLike1(){
+    $.conView.backgroundImage="images/suzmenu2.png";
+}
 
 //LISTENERS
+/*
 $.scrollView.addEventListener("scroll",function(_event){
     Ti.API.info(JSON.stringify(_event.y));
     if(tempY+50 < _event.y && _event.y >= 0 && _event.y <= 862){
@@ -59,6 +82,7 @@ $.scrollView.addEventListener("scroll",function(_event){
     }
     
 });
+*/
 
 
 //CODE

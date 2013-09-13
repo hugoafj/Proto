@@ -119,7 +119,7 @@ function openNext(){
 
 function openPopUp(){
     var tempView        = Ti.UI.createView({backgroundImage:"Images/map_popup.png", height:"227", width:"307",opacity:0});
-    var tempButton      = Ti.UI.createView({backgroundColor:"black", height:93, top:38,opacity:0.1});
+    var tempButton      = Ti.UI.createView({backgroundColor:"transparent", height:93, top:38,opacity:0.1});
     tempButton.addEventListener("click",function(){
         var slideIn = Titanium.UI.createAnimation({left: 0, duration: 200});
         var tempWin = Alloy.createController("NextWindow/NextWindow");
@@ -192,6 +192,23 @@ $.scrollView.addEventListener("scroll",function(_event){
 //CODE
 $.sortList.isOpen = false;
 whatsNew();
+
+setTimeout(function(){
+   
+    $.activityIndicator.show();
+    $.searchingView.visible = true;
+    $.activityIndicator.style = Titanium.UI.iPhone.ActivityIndicatorStyle.DARK;
+    $.activityIndicator.color = "black";
+    $.activityIndicator.height = 50;
+    $.activityIndicator.width = 50;
+    $.activityIndicator.top = 230;
+},1500);
+
+setTimeout(function(){
+    $.splashView.visible = false;
+    $.searchingView.visible = false;
+    $.activityIndicator.hide();
+},5000);
 
 // EXPORTS
 exports.openCloseMenu   = openCloseMenu;

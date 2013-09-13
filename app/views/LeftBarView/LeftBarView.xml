@@ -5,29 +5,30 @@
         </View>
         <ScrollView id="viewContainer" contentHeight="809" top="40">
             <View id="prefView" backgroundImage="Images/preferences01.png" height="809" top="0">
-                <TextField top="97" width="300" class="textInfo"/>
-                <Label id="StudentLbl" top="140" class="labelInfo"  >Student Type</Label>
-                <View top="132" right="0" backgroundColor="black" opacity="0.1" height="30" width="40" onClick="openType"></View>
-                <View zIndex="19" id="typeList" backgroundColor="white" backgroundImage="images/student_list.png" top="166" height="1" isOpen="false" visible="false">
-                    <View top="0" backgroundColor="black" opacity="0.1" height="41" onClick="selectType"></View>
+                <View id="logOut" top="63" right="0" height="30" backgroundColor="transparent" opacity="0.1" width="70"  onClick="logOut"></View>
+                <TextField top="152" width="300" class="textInfo"/>
+                <Label id="StudentLbl" top="190" class="labelInfo"  >Student Type</Label>
+                <View top="184" right="0" backgroundColor="transparent" opacity="0.1" height="30" width="40" onClick="openType"></View>
+                <View zIndex="19" id="typeList" backgroundColor="white" backgroundImage="images/student_list.png" top="221" height="1" isOpen="false" visible="false">
+                    <View top="0" backgroundColor="transparent" opacity="0.1" height="41" onClick="selectType"></View>
                 </View>
-                <Label id="YearLbl" top="180" class="labelInfo">Expected Graduation Year</Label>
-                <View top="172" right="0" backgroundColor="black" opacity="0.1" height="30" width="40" onClick="openYear"></View>
-                <View zIndex="19" id="typeYear" backgroundColor="white" backgroundImage="images/year_list.png" top="206" height="1" isOpen="false" visible="false">
-                    <View top="164" backgroundColor="black" opacity="0.1" height="41" onClick="selectYear"></View>
+                <Label id="YearLbl" top="230" class="labelInfo">Expected Graduation Year</Label>
+                <View top="226" right="0" backgroundColor="transparent" opacity="0.1" height="30" width="40" onClick="openYear"></View>
+                <View zIndex="19" id="typeYear" backgroundColor="white" backgroundImage="images/year_list.png" top="259" height="1" isOpen="false" visible="false">
+                    <View top="164" backgroundColor="transparent" opacity="0.1" height="41" onClick="selectYear"></View>
                 </View>
-                <Label id="ResidentLbl" top="220" class="labelInfo">Resident Type</Label>
-                <View top="212" right="0" backgroundColor="black" opacity="0.1" height="30" width="40" onClick="openRecident"></View>
-                <View zIndex="19" id="typeRecident" backgroundColor="white" backgroundImage="images/resident_list.png" top="246" height="1" isOpen="false" visible="false">
-                    <View top="0" backgroundColor="black" opacity="0.1" height="41" onClick="selectResident"></View>
+                <Label id="ResidentLbl" top="270" class="labelInfo">Resident Type</Label>
+                <View top="264" right="0" backgroundColor="transparent" opacity="0.1" height="30" width="40" onClick="openRecident"></View>
+                <View zIndex="19" id="typeRecident" backgroundColor="white" backgroundImage="images/resident_list.png" top="297" height="1" isOpen="false" visible="false">
+                    <View top="0" backgroundColor="transparent" opacity="0.1" height="41" onClick="selectResident"></View>
                 </View>
-                <Label id="MealLbl" top="260" class="labelInfo">Meal Program</Label>
-                <View top="252" right="0" backgroundColor="black" opacity="0.1" height="30" width="40" onClick="openMeal"></View>
-                <View zIndex="19" id="typeMeal" backgroundColor="white" backgroundImage="images/meal_list.png" top="286" height="1" isOpen="false" visible="false">
-                    <View top="0" backgroundColor="black" opacity="0.1" height="41" onClick="selectMeal"></View>
+                <Label id="MealLbl" top="310" class="labelInfo">Meal Program</Label>
+                <View top="301" right="0" backgroundColor="transparent" opacity="0.1" height="30" width="40" onClick="openMeal"></View>
+                <View zIndex="19" id="typeMeal" backgroundColor="white" backgroundImage="images/meal_list.png" top="332" height="1" isOpen="false" visible="false">
+                    <View top="0" backgroundColor="transparent" opacity="0.1" height="41" onClick="selectMeal"></View>
                 </View>
-                <View id="tagsButton" top="356" left="22" backgroundColor="black" opacity="0.1" height="41" width="70" onClick="openTags"></View>
-                <View id="optButtin" top="564" left="10" backgroundColor="black" opacity="0.1" height="41" width="130" onClick="changeOpt"></View>
+                <View id="tagsButton" top="406" left="22" backgroundColor="transparent" opacity="0.1" height="41" width="70" onClick="openTags"></View>
+                <View id="optButtin" top="604" left="10" backgroundColor="transparent" opacity="0.1" height="41" width="130" onClick="changeOpt"></View>
             </View>
         </ScrollView>
     </View>

@@ -9,15 +9,15 @@
                 <ScrollView id="scrollView" backgroundColor="white" top="0" bottom="0" contentHeight="Ti.UI.SIZE">
                     <!--LIST-->
                     <View id="topOptions" backgroundColor="transparent" backgroundImage="images/search_sort.png" top="0" height="82">
-                        <View top="0" backgroundColor="black" opacity="0.1" height="41" right="0"  width="70" onClick="searchAction"></View>
-                        <TextField top="6" left="29" height="30" width="200" onChange="clearView"></TextField>
+                        <View top="0" backgroundColor="transparent" opacity="0.1" height="41" right="0"  width="70" onClick="searchAction"></View>
+                        <TextField id="txtSearch" top="6" left="29" height="30" width="200" onChange="clearView"></TextField>
                     </View>
                     <View id="locationView" backgroundImage="Images/carllocation_list.png" height="1482" top="82">
-                        <View id="openNext" visible="false" top="30" backgroundColor="black" opacity="0.1" height="70"  onClick="openNext"></View>
+                        <View id="openNext" visible="false" top="30" backgroundColor="transparent" opacity="0.1" height="70"  onClick="openNext"></View>
                     </View>
                     <View id="sortList" backgroundColor="transparent" backgroundImage="images/sort_list.png" top="81" height="1" isOpen="false">
-                        <View top="0" backgroundColor="black" opacity="0.1" height="41"  onClick="byAlph"></View>
-                        <View top="41" backgroundColor="black" opacity="0.1" height="41"  onClick="byNear"></View>
+                        <View top="0" backgroundColor="transparent" opacity="0.1" height="41"  onClick="byAlph"></View>
+                        <View top="41" backgroundColor="transparent" opacity="0.1" height="41"  onClick="byNear"></View>
                     </View>
                     <!--LIST-->
                     <!--MAP--
@@ -30,11 +30,11 @@
                 </View>
             </View>
             <ScrollView id="viewContainer2" class="viewContainer">
-                <View id="locationView2" backgroundImage="Images/carlwhatsnew.png" height="1121" top="0"></View>
+                <View id="locationView2" backgroundImage="Images/carlwhatsnew.png" height="1025" top="0"></View>
             </ScrollView>
         </View>
         <View id="floatingView" class="floatingView" visible="false">
-            <View bottom="50" backgroundColor="black" opacity="0.1" height="50" onClick="fadeOut"></View>
+            <View bottom="50" backgroundColor="transparent" opacity="0.1" height="50" onClick="fadeOut"></View>
         </View>
         <View id="panelView" class="panelView">
             <Require src="LeftBarView/LeftBarView"/>
