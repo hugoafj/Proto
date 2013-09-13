@@ -23,8 +23,18 @@
 },
 ".labelInfo":{
 	font:{
-		fontFamily:"helvetica newe",
-		fontSize:28
+		fontFamily:"Helvetica Newe",
+		fontSize:14
 	},
-	color:"#c8kaka"
+	color:"#c3c3c3",
+	left:10
+},
+".textInfo":{
+	font:{
+		fontFamily:"Helvetica Newe",
+		fontSize:14
+	},
+	//color:"#c3c3c3",
+	left:10,
+	hintText:"Name"
 }

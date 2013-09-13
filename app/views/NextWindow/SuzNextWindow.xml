@@ -1,0 +1,52 @@
+<Alloy>
+    <View id="container" class="container">
+        <View id="topToolBarContainer" class="topToolBarContainer">
+            <View class="closeButton" onClick="closeWindow"></View>
+        </View>
+        <View id="viewContainer" class="viewContainer">
+            <!-- MENU -->
+            <ScrollableView id="scrollableView" showPagingControl="true" backgroundColor="white">
+                <View id="view1" backgroundColor="white"  top="0">
+                    <View top="0" height="42" backgroundColor="white" backgroundImage="images/today.png">
+                        <View class="backDay" onClick="backDay"></View>
+                        <View class="nextDay" onClick="nextDay"></View>
+                    </View>
+                    <ScrollView id="view11" backgroundColor="white" top="41" bottom="0" contentHeight="1653">
+                        <View id="conView" backgroundImage="images/suzmenu1.png">
+                            <View id="slidingView" top="64" opacity="0" height="61" width="546" left="-226" isMore="false" backgroundImage="images/menu_more.png"></View>
+                            <View id="btnSliding" top="64" backgroundColor="transparent" opacity="0.1" height="61" left="0" right="80" onClick="moveSlide"></View>
+                            <View id="likeBtn" top="276" backgroundColor="red" opacity="0.1" height="61" width="30" right="40" onClick="setLike1"></View>
+                        </View>
+                    </ScrollView>
+                </View>
+               <!-- <View id="view2" backgroundColor="white"  top="0">
+                    <View top="0" height="42" backgroundColor="white" backgroundImage="images/tuesday.png">>
+                        <View class="backDay" onClick="backDay"></View>
+                        <View class="nextDay" onClick="nextDay"></View>
+                    </View>
+                    <ScrollView id="view21" backgroundColor="#256" top="41" bottom="0" contentHeight="1500">
+                        <View backgroundImage="Default.png"></View>
+                    </ScrollView>
+                </View>
+                <View id="view3" backgroundColor="white"  top="0">
+                    <View top="0" height="42" backgroundColor="white" backgroundImage="images/wednesday.png">>
+                        <View class="backDay" onClick="backDay"></View>
+                        <View class="nextDay" onClick="nextDay"></View>
+                    </View>
+                    <ScrollView id="view13" backgroundColor="#28b" top="41" bottom="0" contentHeight="1500">
+                        <View backgroundImage="Default.png"></View>
+                    </ScrollView>
+                </View>-->
+            </ScrollableView>
+            <!-- MENU -->
+           
+        </View>
+        <View id="bottomOptions" backgroundColor="white" backgroundImage="images/menu.png" bottom="0" height="45">
+            
+        </View>
+        <!--<View id="tabContainer" class="tabContainer">
+            <View id="tab1" class="tab1"></View>
+            <View id="tab2" class="tab2"  onClick="callNext"></View>
+        </View>-->
+    </View>
+</Alloy>

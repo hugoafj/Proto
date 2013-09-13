@@ -1,0 +1,53 @@
+".container": {
+	top:0,
+	left:Ti.Platform.displayCaps.platformWidth,
+	width:Ti.Platform.displayCaps.platformWidth,
+	bottom:0,
+	backgroundColor:"white"
+},
+".topToolBarContainer":{
+	top:0,
+	left:0,
+	right:0,
+	height:40,
+	backgroundColor:"white",
+	backgroundImage:"images/carllocation.png"
+},
+".closeButton":{
+	left:0,
+	width:40,
+	top:0,
+	bottom:0,
+	opacity:0.1,
+	backgroundColor:"transparent"
+},
+".viewContainer":{
+	top:40,
+	left:0,
+	right:0,
+	bottom:-40,
+	backgroundColor:"white"
+},
+".tabContainer":{
+	bottom:0,
+	left:0,
+	right:0,
+	height:40,
+	backgroundColor:"white"
+},
+".backDay": {
+	top:0,
+	left:0,
+	width:30,
+	height:41,
+	opacity:0.1,
+	backgroundColor:"transparent"
+},
+".nextDay": {
+	top:0,
+	right:0,
+	width:30,
+	height:41,
+	opacity:0.1,
+	backgroundColor:"transparent"
+}

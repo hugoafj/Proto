@@ -9,10 +9,9 @@
                 <ScrollView id="scrollView" backgroundColor="white" top="0" bottom="0" contentHeight="Ti.UI.SIZE">
                     <!--LIST-->
                     <View id="topOptions" backgroundColor="transparent" backgroundImage="images/search_sort.png" top="0" height="82">
-                        <View bottom="0" backgroundColor="black" opacity="0.1" height="41" right="0"  width="70" onClick="openSort"></View>
-                    </View>
+                   </View>
                     <View id="locationView" backgroundImage="Images/location_alphabetical.png" height="1482" top="82">
-                        <View top="500" backgroundColor="black" opacity="0.1" height="200"  onClick="openNext"></View>
+                        <View id="btnNext" top="3" backgroundColor="black" opacity="0.1" height="200" visible="false"  onClick="openNext"></View>
                     </View>
                     <View id="sortList" backgroundColor="transparent" backgroundImage="images/sort_list.png" top="81" height="1" isOpen="false">
                         <View top="0" backgroundColor="black" opacity="0.1" height="41"  onClick="byAlph"></View>
@@ -25,8 +24,7 @@
                 </ScrollView>
                 
                 <View id="bottomOptions" backgroundColor="white" backgroundImage="images/list.png" bottom="0" height="45">
-                    <View left="115" backgroundColor="black" opacity="0.1" width="41"  onClick="byList"></View>
-                    <View left="161" backgroundColor="black" opacity="0.1" width="41"  onClick="byMap"></View>
+            
                 </View>
             </View>
             <ScrollView id="viewContainer2" class="viewContainer">

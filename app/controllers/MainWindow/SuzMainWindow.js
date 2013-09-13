@@ -112,7 +112,7 @@ function byMap(){
 
 function openNext(){
      var slideIn = Titanium.UI.createAnimation({left: 0, duration: 200});
-    var tempWin = Alloy.createController("NextWindow/NextWindow");
+    var tempWin = Alloy.createController("NextWindow/SuzNextWindow");
     APP.masterWindow.getView().add(tempWin.getView());
     tempWin.getView().animate(slideIn);
 }
@@ -160,6 +160,12 @@ function cooking(){
     $.viewContainer.height = Ti.UI.SIZE;
 }
 
+function changeOpt(){
+    $.locationView2.backgroundImage="Images/suzwhatsnew.png";
+    $.locationView.backgroundImage="Images/suzlocation_list.png";
+    $.btnNext.visible = true;
+}
+
 //LISTENERS
 /*APP.container.addEventListener("click",function(){
     var slideIn = Titanium.UI.createAnimation({left: 0, duration: 200});
@@ -192,3 +198,4 @@ exports.openCloseMenu   = openCloseMenu;
 exports.whatsNew        = whatsNew;
 exports.cooking         = cooking;
 exports.byList          = byList;
+exports.changeOpt       = changeOpt;
